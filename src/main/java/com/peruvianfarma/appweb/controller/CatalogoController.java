@@ -15,7 +15,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+
 import javax.servlet.http.HttpSession;
+import javax.validation.Valid;
+
+import com.peruvianfarma.appweb.repository.UsuarioRepository;
 
 @Controller
 public class CatalogoController{
@@ -23,13 +28,15 @@ public class CatalogoController{
     private static final String INDEX ="catalogo/index"; 
     private final ProductoRepository productsData;
     private final ProformaRepository proformaData;
+    private final UsuarioRepository usuariosData;
     
 
     public CatalogoController(ProductoRepository productsData,
-        ProformaRepository proformaData
+        ProformaRepository proformaData, UsuarioRepository usuariosData
         ){
         this.productsData = productsData;
         this.proformaData = proformaData; 
+        this.usuariosData = usuariosData;
         
     }      
 
@@ -45,8 +52,8 @@ public class CatalogoController{
     @GetMapping("/catalogo/add/{id}")
     public String add(@PathVariable("id") Integer id, 
         HttpSession session,
-        Model model){
-        Usuario user = (Usuario)session.getAttribute("user"); 
+        Model model, @Valid Usuario objUser, BindingResult result){
+        Usuario user = (Usuario)session.getAttribute("user");
         if(user==null) {
             model.addAttribute("mensaje", "Debe loguearse antes de agregar");
         }else{
