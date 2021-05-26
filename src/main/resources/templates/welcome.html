@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html xmlns:th="https://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'home')}">
+
+<body>
+    <!-- <h2 style="text-align: center;">Welcome</h2> -->
+
+    <div class="col-md-12" style="text-align: center; margin-top: 5%;">
+        <img class="img-responsive" src="../static/resources/images/Captura.JPG" th:src="@{/resources/images/Captura.JPG}" />
+
+        <hr style="width: 100%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <ul class="nav navbar-nav navbar-right">
+                        <th:block th:if="${session.user==null}">
+                            <!-- <li><a href="/cliente/create" style="color: black; font-weight: bold; margin-left: 10px;"><span class="glyphicon glyphicon-user"></span>REGISTRARSE</a></li> -->
+                            <li><a href="/cliente/create" class="btn btn-outline-success" type="submit" style="width: 200px; margin-top: 10px;"><span class="glyphicon glyphicon-user"></span>REGISTRARSE</a></li>
+                            <li><a href="/usuario/login" class="btn btn-outline-success" type="submit" style="width:200px; margin-top: 10px;"><span class="glyphicon glyphicon-log-in"></span>INGRESAR</a></li>
+                        </th:block>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
