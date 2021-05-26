@@ -20,9 +20,9 @@
 
 </head>
 
-<body>
+<body background="/resources/images/fondo.jpg" class="img-fluid" width="100px" height="100px" alt="">
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #BD1515;">
-        <a class="navbar-brand" href="#"><img src="../catalogo/Captura.JPG" class="img-fluid" width="100px" height="100px" alt=""></a>
+        <a class="navbar-brand" href="#"><img src="/resources/images/Captura.JPG" class="img-fluid" width="100px" height="100px" alt=""></a>
         <!-- <a class="navbar-brand" href="#">App</a> -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -86,8 +86,12 @@
                     <li><a href="/usuario/login"><span class="glyphicon glyphicon-log-in"></span>INGRESAR</a></li>
                 </th:block> -->
                 <th:block th:if="${session.user!=null}">
+<<<<<<< HEAD
                     <li><a href="/usuario/logout"><span class="glyphicon glyphicon-log-in"></span>SALIR</a></li>
 >>>>>>> origin/master
+=======
+                    <li><a href="/usuario/logout" style="margin-left: 10px;"><span class="glyphicon glyphicon-log-in"></span>SALIR</a></li>
+>>>>>>> origin/RUBEN
                 </th:block>
             </ul>
         </div>
@@ -116,12 +120,13 @@
                 </div>
             </div>
         </div>
+    </div>
 
-        <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
-        <script th:src="@{/webjars/jquery-ui/jquery-ui.min.js}"></script>
-        <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
-        <script th:src="@{/webjars/bootstrap-datepicker/js/bootstrap-datepicker.min.js}"></script>
-        <script th:src="@{/webjars/jquery.inputmask/jquery.inputmask.min.js}"></script>
+    <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+    <script th:src="@{/webjars/jquery-ui/jquery-ui.min.js}"></script>
+    <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+    <script th:src="@{/webjars/bootstrap-datepicker/js/bootstrap-datepicker.min.js}"></script>
+    <script th:src="@{/webjars/jquery.inputmask/jquery.inputmask.min.js}"></script>
 
 </body>
 <<<<<<< HEAD
