@@ -20,16 +20,29 @@ import lombok.*;
 @Builder
 @Entity
 @Table(name = "t_product")
+<<<<<<< HEAD
 public class Producto {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+=======
+public class Producto{
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+>>>>>>> origin/master
     private String descripcion;
     private BigDecimal precio;
     @Temporal(TemporalType.DATE)
     private Date dueDate;
     private String imageFileName;
     private String status;
+<<<<<<< HEAD
     
 }
+=======
+   
+}
+>>>>>>> origin/master

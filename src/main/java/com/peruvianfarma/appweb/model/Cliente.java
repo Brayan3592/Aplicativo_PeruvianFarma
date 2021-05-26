@@ -24,6 +24,7 @@ import lombok.*;
 public class Cliente {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+<<<<<<< HEAD
     private Long id;
     private String firstName;
     private String lastName;
@@ -33,6 +34,16 @@ public class Cliente {
     private Date birthdate; 
     private String gender;
     private String maritalStatus;  
+=======
+    private Integer id;
+    private String firstName;
+    private String lastName;
+    private String email;
+    private String operador;  
+    private String phone; 
+    @DateTimeFormat(pattern = "dd/MM/yyyy")
+    private Date birthdate; 
+>>>>>>> origin/master
     @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id")
     private Usuario user;   

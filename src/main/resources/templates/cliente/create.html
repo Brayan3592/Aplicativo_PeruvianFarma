@@ -9,7 +9,11 @@
         <div class="row">
             <div class="col-sm-10 mt-5">
                 <div class="form-group row">
+<<<<<<< HEAD
                     <h1>REGISTRARSE</h1>
+=======
+                    <h1>Client</h1>
+>>>>>>> origin/master
                 </div>
                 <form th:object="${client}" th:action="@{/cliente/create}" method="post">
                     <div class="form-group row">
@@ -38,14 +42,28 @@
                     </div>
                     <div class="form-group row">
                         <div class="col-sm-2">
+<<<<<<< HEAD
                             <label for="phone">Phone</label>
                         </div>
                         <div class="col-sm-2">
                             <input type="text" data-inputmask="'mask': '(999) 999-9999'" th:field="*{phone}" />
+=======
+                            <label for="operador">Operador</label>
+                        </div>
+                        <div class="col-sm-2">
+                            <select id="operador" placeholder="operador" autocomplete="off" class="form-control" th:field="*{operador}">
+                    <option value="-">None</option>
+                    <option value="Claro">Claro</option>
+                    <option value="Entel">Entel</option>
+                    <option value="Movistar">Movistar</option>
+                    
+                  </select>
+>>>>>>> origin/master
                         </div>
                     </div>
                     <div class="form-group row">
                         <div class="col-sm-2">
+<<<<<<< HEAD
                             <label for="maritalStatus">Operador</label>
                         </div>
                         <div class="col-sm-2">
@@ -55,6 +73,12 @@
                     <option value="Married">Movistar</option>
                     <option value="Divored">Entel</option>
                   </select>
+=======
+                            <label for="phone">Phone</label>
+                        </div>
+                        <div class="col-sm-2">
+                            <input type="text" data-inputmask="'mask': '(999) 999-9999'" th:field="*{phone}" />
+>>>>>>> origin/master
                         </div>
                     </div>
                     <div class="form-group row">
@@ -70,6 +94,7 @@
                             </div>
                         </div>
                     </div>
+<<<<<<< HEAD
                     <!--                     <div class="form-group row">
                         <div class="col-sm-2">
                             <label for="maritalStatus">Marital Status</label>
@@ -97,6 +122,9 @@
                             </div>
                         </div>
                     </div>
+=======
+
+>>>>>>> origin/master
                     <div class="form-group row">
                         <div class="col-sm-2">
                             <label for="user.userID">User</label>

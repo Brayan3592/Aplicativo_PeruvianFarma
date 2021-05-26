@@ -31,4 +31,8 @@ public class Contacto{
     @NotNull
     private String reason; 
   
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/master

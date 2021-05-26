@@ -94,6 +94,17 @@
             <version>${lombok.version}</version>
         </dependency>
 
+<<<<<<< HEAD
+=======
+		<dependency>
+			<groupId>org.springframework.session</groupId>
+			<artifactId>spring-session-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.session</groupId>
+			<artifactId>spring-session-jdbc</artifactId>
+		</dependency>
+>>>>>>> origin/master
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
