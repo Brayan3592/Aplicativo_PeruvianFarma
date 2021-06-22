@@ -25,12 +25,12 @@ public class Producto {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
     private String descripcion;
     private BigDecimal precio;
     @Temporal(TemporalType.DATE)
     private Date dueDate;
     private String imageFileName;
     private String status;
-    
+   
 }
