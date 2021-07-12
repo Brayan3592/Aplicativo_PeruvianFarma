@@ -8,7 +8,7 @@
 		<version>2.4.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.peruvianfarma</groupId>
+	<groupId>peruvianfarma</groupId>
 	<artifactId>appweb</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>appweb</name>
@@ -86,7 +86,23 @@
 			<artifactId>jquery.inputmask</artifactId>
 			<version>5.0.5</version>
 		</dependency>
+		<dependency>
+			<groupId>org.webjars.bower</groupId>
+			<artifactId>jquery-maskmoney</artifactId>
+			<version>3.0.2</version>
+		</dependency>
 		<!-- end of webjars -->
+
+		<dependency>
+			<groupId>net.sf.jasperreports</groupId>
+			<artifactId>jasperreports</artifactId>
+			<version>6.17.0</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.jasperreports</groupId>
+			<artifactId>jasperreports-fonts</artifactId>
+			<version>6.17.0</version>
+		</dependency>
 
 		<dependency>
             <groupId>org.projectlombok</groupId>
@@ -103,6 +119,19 @@
 			<artifactId>spring-session-jdbc</artifactId>
 		</dependency>
 
+
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-boot-starter</artifactId>
+			<version>3.0.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>2.12.3</version>
+		</dependency>
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
