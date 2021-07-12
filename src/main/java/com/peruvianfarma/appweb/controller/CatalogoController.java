@@ -36,9 +36,14 @@ public class CatalogoController{
     public String index(
         @RequestParam(defaultValue="") String searchName,
         Model model){
-        List<Producto> listProducto = this.productsData.getAllActiveProductos();
-        model.addAttribute("products",listProducto);
-        return INDEX;
+            List<Producto> listProducto = null;
+            if(searchName.isEmpty()){
+                listProducto = this.productsData.getAllActiveProductos();
+            }else{
+                listProducto = this.productsData.getAllActiveProductosBySearch(searchName);
+            }
+            model.addAttribute("products",listProducto);
+            return INDEX;
     }    
 
     @GetMapping("/catalogo/add/{id}")
