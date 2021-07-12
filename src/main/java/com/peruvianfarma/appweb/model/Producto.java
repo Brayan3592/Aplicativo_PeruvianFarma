@@ -19,9 +19,10 @@ import lombok.*;
 @AllArgsConstructor
 @Builder
 @Entity
-@Table(name = "t_product")
-public class Producto{
+@Table(name = "t_productos")
+public class Producto {
 
+    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
